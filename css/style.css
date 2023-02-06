@@ -346,34 +346,47 @@ main {
 .second-hand {
     width: 2px;
     height: 240px;
-    background-color: #ff9f1c;
+    /*background-color: #ff9f1c;*/
     position: absolute;
     border-radius: 6px 6px 0 0;
     transform: translate(0, -50%);
     transform-origin: bottom center;
     z-index: 12;
+
+    /* Efeito Seta */
+    border-bottom: 240px solid #ff9f1c;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
 }
 
 .minute-hand {
     width: 4px;
     height: 200px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     position: absolute;
     border-radius: 6px 6px 0 0;
     transform: translate(0, -50%);
     transform-origin: bottom center;
     z-index: 11;
+
+    border-bottom: 200px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 }
 
 .hour-hand {
     width: 8px;
     height: 150px;
-    background-color: #ff105e;
+    /*background-color: #ff105e;*/
     position: absolute;
     border-radius: 6px 6px 0 0;
     transform: translate(0, -50%);
     transform-origin: bottom center;
     z-index: 10;
+
+    border-bottom: 154px solid #ff105e;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
 }
 
 .center {
@@ -383,4 +396,11 @@ main {
     background-color: #fff;
     position: absolute;
     z-index: 13;
+}
+
+.seta-3 {
+    border-bottom: 40px solid #0C0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    float: left;
 }
